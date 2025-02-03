@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faHome,
+  faUser,
+  faProjectDiagram,
+  faBlog,
+  faFileDownload,
+  faEnvelope,
+  faCode, // Icon for Skills
+} from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Optional: Brand icons
 
 const NavBar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -26,13 +37,27 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${visible ? 'navbar--visible' : 'navbar--hidden'}`}>
       <div className="navbar-content">
-        <a href="#home" className="navbar-logo" onClick={() => scrollToSection('home')}>
-          My Portfolio
-        </a>
         <ul className="navbar-links">
-          <li><a href="#about" onClick={() => scrollToSection('about')}>About</a></li>
-          <li><a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a></li>
-          <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
+          <li>
+            <a href="#about" onClick={() => scrollToSection('about')}>
+              <FontAwesomeIcon icon={faUser} /> About
+            </a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => scrollToSection('skills')}>
+              <FontAwesomeIcon icon={faCode} /> Skills
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={() => scrollToSection('projects')}>
+              <FontAwesomeIcon icon={faProjectDiagram} /> Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => scrollToSection('contact')}>
+              <FontAwesomeIcon icon={faEnvelope} /> Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

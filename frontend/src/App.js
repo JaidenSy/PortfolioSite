@@ -15,7 +15,13 @@ function App() {
       <section id="projects" style={{ height: '100vh', background: '#d4d4d4' }}>
         <h1>Projects</h1>
       </section>
-      <section id="contact" style={{ height: '100vh', background: '#c4c4c4' }}>
+      <section id="blog" style={{ height: '100vh', background: '#c4c4c4' }}>
+        <h1>Blog</h1>
+      </section>
+      <section id="resume" style={{ height: '100vh', background: '#b4b4b4' }}>
+        <h1>Resume</h1>
+      </section>
+      <section id="contact" style={{ height: '100vh', background: '#a4a4a4' }}>
         <h1>Contact Me</h1>
       </section>
     </div>
