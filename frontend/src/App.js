@@ -6,20 +6,26 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <section id="home" style={{ height: '100vh', background: '#f4f4f4' }}>
-        <h1>Welcome to My Portfolio</h1>
+      <section id="about" style={{ height: '100vh', background: '#e4e4e4', paddingTop: '80px' }}>
+        <div className="about-content">
+          <div className="about-text">
+            <h1>About Me</h1>
+            <p>
+              Hi, I'm Jaiden Sy, a passionate developer with expertise in React.js, Python, Golang, and other various modern web technologies.
+              I love building scalable and user-friendly applications that solve real-world problems. I'm always eager to learn new technologies and improve my skills.
+              
+            </p>
+          </div>
+          <div className="about-photo">
+            <img src="/images/Github-Universe-Profile.png" alt="Jaiden Profile Pic" />
+          </div>
+        </div>
       </section>
-      <section id="about" style={{ height: '100vh', background: '#e4e4e4' }}>
-        <h1>About Me</h1>
+      <section id="skills" style={{ height: '100vh', background: '#c4c4c4' }}>
+        <h1>Skills</h1>
       </section>
       <section id="projects" style={{ height: '100vh', background: '#d4d4d4' }}>
         <h1>Projects</h1>
-      </section>
-      <section id="blog" style={{ height: '100vh', background: '#c4c4c4' }}>
-        <h1>Blog</h1>
-      </section>
-      <section id="resume" style={{ height: '100vh', background: '#b4b4b4' }}>
-        <h1>Resume</h1>
       </section>
       <section id="contact" style={{ height: '100vh', background: '#a4a4a4' }}>
         <h1>Contact Me</h1>
