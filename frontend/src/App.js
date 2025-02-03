@@ -1,22 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import NavBar from './components/Navbar/Navbar';
 import './App.css';
 
 function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    fetch('http://localhost:8080/api/hello')
-      .then((response) => response.text())
-      .then((data) => setMessage(data))
-      .catch((error) => console.error('Error fetching data:', error));
-  }, []);
-
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My Portfolio</h1>
-        <p>Backend says: {message}</p>
-      </header>
+      <NavBar />
+      <section id="home" style={{ height: '100vh', background: '#f4f4f4' }}>
+        <h1>Welcome to My Portfolio</h1>
+      </section>
+      <section id="about" style={{ height: '100vh', background: '#e4e4e4' }}>
+        <h1>About Me</h1>
+      </section>
+      <section id="projects" style={{ height: '100vh', background: '#d4d4d4' }}>
+        <h1>Projects</h1>
+      </section>
+      <section id="contact" style={{ height: '100vh', background: '#c4c4c4' }}>
+        <h1>Contact Me</h1>
+      </section>
     </div>
   );
 }
