@@ -5,23 +5,22 @@ import 'slick-carousel/slick/slick-theme.css';
 import './SkillCarousel.css';
 import { Skill, SkillCarouselProps } from '../../types';
 
-const SkillCarousel: React.FC<SkillCarouselProps> = ({ skills }) => {
+const SkillCarousel = ({ skills }: SkillCarouselProps) => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '0',
-    initialSlide: 1, // Start with the second item as the center
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 1, // Ensure the second item is centered on larger screens
         },
       },
       {
@@ -37,7 +36,7 @@ const SkillCarousel: React.FC<SkillCarouselProps> = ({ skills }) => {
   return (
     <div className="skill-carousel">
       <Slider {...settings}>
-        {skills.slice(0, 3).map((skill, index) => (
+        {skills.map((skill, index) => (
           <div key={index} className="skill-card-wrapper">
             <div className="skill-card">
               <img src={skill.image} alt={skill.skillName} className="skill-image" />

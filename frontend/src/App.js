@@ -19,6 +19,22 @@ const skills = [
     image: '/images/python.png',
     description: 'A high-level, interpreted programming language with dynamic semantics.',
   },
+  {
+    skillName: 'Skill1',
+    image: '/images/react.png',
+    description: 'A JavaScript library for building user interfaces.',
+  },
+  {
+    skillName: 'Skill2',
+    image: '/images/golang.png',
+    description: 'A statically typed, compiled programming language designed at Google.',
+  },
+  {
+    skillName: 'Skill3',
+    image: '/images/python.png',
+    description: 'A high-level, interpreted programming language with dynamic semantics.',
+  },
+
 ];
 
 function App() {
