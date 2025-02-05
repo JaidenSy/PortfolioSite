@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SkillCarousel.css';
-import { Skill, SkillCarouselProps } from '../../types';
+import { Skill, SkillCarouselProps } from '../../constants/types';
 
 const SkillCarousel = ({ skills }: SkillCarouselProps) => {
   const settings = {

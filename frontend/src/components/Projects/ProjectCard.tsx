@@ -1,8 +1,7 @@
 import React from 'react';
 import './ProjectCard.css';
-import { ProjectCardProps } from '../../types';
 
-const ProjectCard = ({ title, description, image, liveLink, repoLink }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, liveLink, repoLink }) => {
   return (
     <div className="project-card">
       <img src={image} alt={title} className="project-image" />
