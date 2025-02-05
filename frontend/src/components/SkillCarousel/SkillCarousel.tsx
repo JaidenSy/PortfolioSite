@@ -13,7 +13,8 @@ const SkillCarousel = ({ skills }: SkillCarouselProps) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '0',
+    centerPadding: '0', // Adjust padding to center the middle card
+    initialSlide: 1, // Start with the second card
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
@@ -24,7 +25,8 @@ const SkillCarousel = ({ skills }: SkillCarouselProps) => {
           slidesToShow: 3,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '0',
+          centerPadding: '0', // Adjust padding for larger screens
+          initialSlide: 1, // Start with the second card
         },
       },
       {
@@ -32,7 +34,7 @@ const SkillCarousel = ({ skills }: SkillCarouselProps) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: false, // Disable center mode for smaller screens
         },
       },
     ],

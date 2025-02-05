@@ -42,13 +42,13 @@
 }
 
 .slick-center .skill-card {
-  transform: scale(1);
-  opacity: 1;
+  transform: scale(1); /* Keep the center card at default size */
+  opacity: 1; /* Ensure the center card is fully opaque */
 }
 
 .slick-slide:not(.slick-center) .skill-card {
-  transform: scale(0.8);
-  opacity: 0.5;
+  transform: scale(0.8); /* Make the non-center cards smaller */
+  opacity: 0.5; /* Make the non-center cards transparent */
 }
 
 .slick-prev, .slick-next {

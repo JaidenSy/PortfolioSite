@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Navbar.css';
+import '../../static/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,

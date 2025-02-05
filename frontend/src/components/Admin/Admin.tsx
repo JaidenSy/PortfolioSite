@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Admin.css';
+import '../../static/Admin.css';
 
 const Admin = () => {
   const [skill, setSkill] = useState({ skillName: '', image: '', description: '' });

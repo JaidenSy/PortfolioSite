@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard.tsx';
-import './Projects.css';
+import '../../static/Projects.css';
 import { ProjectsProps } from '../../constants/types';
 
 const Projects = ({ projects }: ProjectsProps) => {

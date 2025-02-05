@@ -5,7 +5,7 @@ import NavBar from './components/Navbar/Navbar.tsx';
 import SkillCarousel from './components/SkillCarousel/SkillCarousel.tsx';
 import Projects from './components/Projects/Projects.tsx';
 import Admin from './components/Admin/Admin.tsx';
-import './App.css';
+import './static/App.css';
 import { Skill, Project } from './constants/types';
 
 const App = () => {
