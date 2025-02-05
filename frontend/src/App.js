@@ -1,6 +1,25 @@
 import React from 'react';
-import NavBar from './components/Navbar/Navbar';
+import NavBar from './components/Navbar/Navbar.tsx';
+import SkillCarousel from './components/SkillCarousel/SkillCarousel.tsx';
 import './App.css';
+
+const skills = [
+  {
+    skillName: 'React.js',
+    image: '/images/react.png',
+    description: 'A JavaScript library for building user interfaces.',
+  },
+  {
+    skillName: 'Golang',
+    image: '/images/golang.png',
+    description: 'A statically typed, compiled programming language designed at Google.',
+  },
+  {
+    skillName: 'Python',
+    image: '/images/python.png',
+    description: 'A high-level, interpreted programming language with dynamic semantics.',
+  },
+];
 
 function App() {
   return (
@@ -13,7 +32,6 @@ function App() {
             <p>
               Hi, I'm Jaiden Sy, a passionate developer with expertise in React.js, Python, Golang, and other various modern web technologies.
               I love building scalable and user-friendly applications that solve real-world problems. I'm always eager to learn new technologies and improve my skills.
-              
             </p>
           </div>
           <div className="about-photo">
@@ -23,6 +41,7 @@ function App() {
       </section>
       <section id="skills" style={{ height: '100vh', background: '#c4c4c4' }}>
         <h1>Skills</h1>
+        <SkillCarousel skills={skills} />
       </section>
       <section id="projects" style={{ height: '100vh', background: '#d4d4d4' }}>
         <h1>Projects</h1>

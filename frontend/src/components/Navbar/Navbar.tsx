@@ -2,15 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faHome,
   faUser,
   faProjectDiagram,
-  faBlog,
-  faFileDownload,
   faEnvelope,
-  faCode, // Icon for Skills
+  faCode,
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Optional: Brand icons
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const NavBar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -27,7 +24,7 @@ const NavBar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, visible]);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -39,22 +36,22 @@ const NavBar = () => {
       <div className="navbar-content">
         <ul className="navbar-links">
           <li>
-            <a href="#about" onClick={() => scrollToSection('about')}>
+            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>
               <FontAwesomeIcon icon={faUser} /> About
             </a>
           </li>
           <li>
-            <a href="#skills" onClick={() => scrollToSection('skills')}>
+            <a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>
               <FontAwesomeIcon icon={faCode} /> Skills
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={() => scrollToSection('projects')}>
+            <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>
               <FontAwesomeIcon icon={faProjectDiagram} /> Projects
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={() => scrollToSection('contact')}>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
               <FontAwesomeIcon icon={faEnvelope} /> Contact
             </a>
           </li>

@@ -1,0 +1,44 @@
+.skill-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skill-card-wrapper {
+  padding: 10px; /* Add padding between elements */
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.skill-card {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-image {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.slick-center .skill-card-wrapper {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.slick-slide:not(.slick-center) .skill-card-wrapper {
+  opacity: 0.6;
+}
