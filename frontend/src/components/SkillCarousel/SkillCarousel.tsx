@@ -7,11 +7,13 @@ import { Skill, SkillCarouselProps } from '../../types';
 
 const SkillCarousel = ({ skills }: SkillCarouselProps) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '0',
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
@@ -21,6 +23,8 @@ const SkillCarousel = ({ skills }: SkillCarouselProps) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '0',
         },
       },
       {
@@ -28,6 +32,7 @@ const SkillCarousel = ({ skills }: SkillCarouselProps) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],

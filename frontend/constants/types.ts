@@ -7,3 +7,11 @@ export interface Skill {
 export interface SkillCarouselProps {
     skills: Skill[];
   }
+
+export interface ProjectCardProps {
+  title: string;
+  description: string;
+  image: string;
+  liveLink: string;
+  repoLink: string;
+}

@@ -1,11 +1,23 @@
+/* General section styles */
+.section {
+  padding: 40px 20px; /* Adjust padding as needed */
+  margin: 0; /* Remove margin to span the full width */
+  width: 100%; /* Ensure the section spans the full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
 /* About Me Section */
+.about {
+  padding-top: 80px; /* Add top padding to account for the Navbar */
+}
+
 .about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px; /* Limit the width of the content */
+  height: 600px;
+  margin: 0 auto; /* Center the content */
 }
 
 .about-text {
@@ -34,4 +46,19 @@
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills {
+  background: #c4c4c4;
+}
+
+/* Projects Section */
+.projects {
+  background: #d4d4d4;
+}
+
+/* Contact Section */
+.contact {
+  background: #a4a4a4;
 }

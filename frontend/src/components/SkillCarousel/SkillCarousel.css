@@ -2,11 +2,14 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
+  position: relative;
+  height: 800px;
 }
 
 .skill-card-wrapper {
   padding: 10px;
   margin: 0 10px;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .skill-card {
@@ -17,6 +20,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 300px;
   height: 400px;
+  transition: transform 0.3s, opacity 0.3s;
+  overflow: hidden;
 }
 
 .skill-image {
@@ -34,6 +39,30 @@
 .skill-card p {
   font-size: 1rem;
   color: #666;
+}
+
+.slick-center .skill-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slick-slide:not(.slick-center) .skill-card {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.slick-prev, .slick-next {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
 }
 
 .slick-prev:before, .slick-next:before {

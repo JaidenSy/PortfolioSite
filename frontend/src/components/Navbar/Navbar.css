@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  top: 20px; /* Increased top padding */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
